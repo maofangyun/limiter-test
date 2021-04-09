@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.4.1'
+    compile group: 'org.apache.commons', name: 'commons-pool2', version: '2.9.0'
+    compile group: 'org.redisson', name: 'redisson', version: '3.14.1'
+    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.4.1'
+    compile group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '2.4.1'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.4.1'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.1'
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.75'
+    compile group: 'org.springframework', name: 'spring-aop', version: '5.3.3'
+    compile group: 'org.springframework', name: 'spring-aspects', version: '5.3.3'
+
+    compile files('D:\\MyCode\\rate-limiter\\build\\libs\\rate-limiter-1.0.0.jar')
+    compile files('D:\\MyCode\\annotation-cache\\build\\libs\\annotation-cache-1.0.0.jar')
+
+}
